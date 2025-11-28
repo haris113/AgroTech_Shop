@@ -1,0 +1,108 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+        url('/AgroTech_Shop/assets/Background.jpg') no-repeat center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD REGISTER */
+.register-card {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.85); /* efek kaca */
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);} 
+    to { opacity: 1; transform: translateY(0);} 
+}
+
+/* HEADER ATAS */
+.top-section {
+    background: linear-gradient(135deg, #e8ffe8, #fff3c4);
+    padding: 35px 30px;
+    text-align: center;
+}
+
+.top-section img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.top-section p {
+    font-size: 13px;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+/* JUDUL */
+.title-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-box h3 {
+    margin: 0;
+    color: #058f2f;
+    font-weight: 700;
+}
+
+.title-box small {
+    color: #777;
+}
+
+/* FORM */
+.form-section {
+    padding: 30px;
+}
+
+.input-field {
+    margin-bottom: 18px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.input-field input:focus {
+    border-color: #0ab43c;
+    box-shadow: 0 0 4px rgba(0, 168, 46, 0.4);
+}
+
+/* BUTTON */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    background: #f2c600; /* kuning cerah */
+    color: #005d19;      /* hijau gelap */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.register-btn:hover {
+    background: #ffbf00;
+    transform: scale(1.03);
+}
+

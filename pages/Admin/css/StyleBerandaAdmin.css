@@ -1,0 +1,161 @@
+/* =============================
+   AGROTECH SHOP MAIN STYLESHEET
+   ============================= */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f1f5f1;
+}
+
+/* Navbar */
+.navbar {
+    background: #216c2e;
+    color: white;
+    padding: 18px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbar .logo {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.navbar ul {
+    display: flex;
+    gap: 24px;
+    font-size: 18px;
+}
+.navbar ul li a {
+    color: white;
+    transition: 0.3s;
+}
+.navbar ul li a:hover {
+    color: #ffd84d;
+}
+
+/* Cart Icon */
+.cart-btn {
+    background: #ffd84d;
+    color: black;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    position: relative;
+}
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #c42e24;
+    color: white;
+    padding: 2px 7px;
+    font-size: 11px;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #2f8e44, #4eb85c);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+.hero p {
+    margin-top: 12px;
+    font-size: 18px;
+}
+.hero .btn-primary {
+    margin-top: 20px;
+    background: #145b24;
+    padding: 12px 32px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.hero .btn-primary:hover {
+    background: #0e451b;
+}
+
+/* Product Catalog */
+.catalog-title {
+    color: #145b24;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.search-box,
+.select-box {
+    padding: 10px 14px;
+    border: 2px solid #4eb85c;
+    border-radius: 10px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 24px;
+}
+
+/* Product Card */
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    position: relative;
+}
+.card:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #d3332d;
+    color: white;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.card-title {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #145b24;
+    font-weight: 600;
+}
+.card button {
+    margin-top: 12px;
+    background: #216c2e;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.card button:hover {
+    background: #184f22;
+}
